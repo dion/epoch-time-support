@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Epoch — Unix Time Converter</title>
+<meta name="description" content="Epoch is a fast, dark, monospaced Unix timestamp converter for iOS.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --signal: #1f8f63;
+    --text: #14201c;
+    --text-dim: #55635e;
+    --rule: rgba(0, 0, 0, .1);
+    --bg: #f7faf9;
+    --card: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --signal: #34d399;
+      --text: #eef4f2;
+      --text-dim: #7d8a86;
+      --rule: rgba(255, 255, 255, .08);
+      --bg: #080c0b;
+      --card: #0e1513;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 6vh 5vw 12vh;
+    background: var(--bg);
+    color: var(--text);
+    font: 400 17px/1.65 "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 46rem; margin: 0 auto; }
+  .wordmark {
+    font: 600 15px/1 "IBM Plex Mono", ui-monospace, monospace;
+    letter-spacing: .04em;
+    margin: 0 0 2.5rem;
+  }
+  .wordmark .dot { color: var(--signal); }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 .5rem; font-weight: 600; }
+  h2 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin: 2.75rem 0 .75rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  .tagline { color: var(--text-dim); margin: 0 0 2rem; }
+  .demo {
+    background: var(--card);
+    border: 1px solid var(--rule);
+    border-radius: 11px;
+    padding: 1.25rem 1.4rem;
+    margin: 0 0 1.5rem;
+    font: 400 15px/1.8 "IBM Plex Mono", ui-monospace, monospace;
+    overflow-wrap: anywhere;
+  }
+  .demo .k { color: var(--text-dim); }
+  .demo .v { color: var(--signal); }
+  .cta {
+    display: inline-block;
+    font: 600 14px/1 "IBM Plex Mono", ui-monospace, monospace;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--bg);
+    background: var(--signal);
+    padding: .9rem 1.2rem;
+    border-radius: 8px;
+  }
+  ul { padding-left: 1.15rem; }
+  li { margin: .4rem 0; }
+  li::marker { color: var(--signal); }
+  a { color: var(--signal); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  .mono { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: .9em; }
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    color: var(--text-dim);
+    font-size: .9rem;
+  }
+</style>
+</head>
+<body>
+<main>
+
+<p class="wordmark">epoch<span class="dot">·</span>time</p>
+
+<h1>Epoch — Unix Time Converter</h1>
+<p class="tagline">Dark, monospaced, no distractions. If it's data, it's in mono.</p>
+
+<div class="demo">
+  <span class="k">input&nbsp;&nbsp;</span> <span class="v">1767225600</span><br>
+  <span class="k">utc&nbsp;&nbsp;&nbsp;&nbsp;</span> 2026-01-01 00:00:00<br>
+  <span class="k">iso8601</span> 2026-01-01T00:00:00Z
+</div>
+
+<p><a class="cta" href="https://apps.apple.com/us/app/epoch-unix-time-converter/id6804011442">Download on the App Store</a></p>
+
+<h2>What it does</h2>
+<ul>
+  <li>Converts Unix timestamps to readable dates the moment you paste them, and dates back to timestamps. It detects seconds, milliseconds and ISO 8601 automatically.</li>
+  <li>Live epoch clock, LOCAL and UTC output, relative time, and your favourite time zones side by side.</li>
+  <li>Paste from anywhere with one tap, and tap to copy or share any result.</li>
+  <li>New in 1.1: a Home Screen widget, batch conversion from the share sheet, and Siri &amp; Shortcuts support.</li>
+  <li>No accounts and no tracking of what you convert. Everything stays on your device.</li>
+</ul>
+
+<h2>Support</h2>
+<p>Found a bug or have a feature request? <a href="https://github.com/dion/epoch-time-support/issues">Open an issue on GitHub</a>.</p>
+
+<h2>Privacy</h2>
+<p>Read the <a href="privacy.html">privacy policy</a>.</p>
+
+<footer>
+  <p>Available in English and Spanish for iPhone running iOS 17 or later.</p>
+</footer>
+
+</main>
+</body>
+</html>
